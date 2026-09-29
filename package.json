@@ -1,0 +1,11 @@
+{
+  "name": "moneyos",
+  "version": "1.0.0",
+  "private": true,
+  "description": "MoneyOS: private, local-first personal finance PWA. No backend; data stays in IndexedDB on your device.",
+  "scripts": {
+    "start": "npx --yes serve -l 5173 .",
+    "dev": "npx --yes serve -l 5173 ."
+  },
+  "license": "MIT"
+}
