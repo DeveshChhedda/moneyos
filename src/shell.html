@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en-IN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>MoneyOS</title>
+<meta name="description" content="MoneyOS: a private, local-first personal finance app. Your data stays on your device.">
+<meta name="theme-color" content="#F5F6F8">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="apple-mobile-web-app-title" content="MoneyOS">
+<meta name="format-detection" content="telephone=no">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%231B1D22'/%3E%3Crect x='24' y='24' width='16' height='16' rx='5' fill='%232FB594'/%3E%3C/svg%3E">
+<style>
+/*CSS*/
+</style>
+</head>
+<body>
+<div class="app" id="app">
+  <nav class="sidebar" aria-label="Main">
+    <div class="brand"><i></i>MoneyOS</div>
+    <a href="#" class="side-add" onclick="event.preventDefault();openTxForm({})">+ Add transaction</a>
+    <a href="#/dashboard" data-r="dashboard">%home Dashboard</a>
+    <a href="#/transactions" data-r="transactions">%list Transactions</a>
+    <a href="#/income" data-r="income">%in Income</a>
+    <a href="#/expenses" data-r="expenses">%out Expenses</a>
+    <a href="#/accounts" data-r="accounts">%bank Accounts</a>
+    <a href="#/cards" data-r="cards">%card Credit cards</a>
+    <a href="#/loans" data-r="loans">%loan Loans</a>
+    <a href="#/investments" data-r="investments">%trend Investments</a>
+    <a href="#/networth" data-r="networth">%net Net worth</a>
+    <a href="#/budget" data-r="budget">%pie Budgets</a>
+    <a href="#/goals" data-r="goals">%target Goals</a>
+    <a href="#/recurring" data-r="recurring">%repeat Recurring</a>
+    <a href="#/reports" data-r="reports">%chart Reports</a>
+    <a href="#/calendar" data-r="calendar">%cal Calendar</a>
+    <a href="#/settings" data-r="settings">%gear Settings</a>
+    <p style="margin-top:auto;padding:16px 12px 0;font-size:12px;color:var(--faint)">%shield Data stays on this device</p>
+  </nav>
+  <main class="main" id="main"></main>
+</div>
+<nav class="tabbar" aria-label="Tabs">
+  <a href="#/dashboard" data-tab="dashboard">%home<span>Home</span></a>
+  <a href="#/transactions" data-tab="transactions">%list<span>Transactions</span></a>
+  <a href="#/budget" data-tab="budget">%pie<span>Budget</span></a>
+  <a href="#/investments" data-tab="investments">%trend<span>Investments</span></a>
+  <a href="#/more" data-tab="more">%grid<span>More</span></a>
+</nav>
+<button class="fab" onclick="openTxForm({})" aria-label="Add transaction">%plus Add</button>
+<script>
+/*JS*/
+</script>
+</body>
+</html>
